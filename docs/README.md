@@ -116,7 +116,11 @@ Before starting our development, we'll require to setup our Prisma Migrations. R
 To start our migrations, run the following command in your console:
 
 ```sh
+# Run Prisma migrations to initialize the database
 npx prisma migrate dev --name init
+
+# Seed the database with initial data
+npx prisma db seed
 ```
 
 > [!NOTE]
