@@ -88,6 +88,9 @@ export default function Index() {
           <Link to={LOGIN_PATH} className={buttonVariants({ size: 'sm' })}>
             {user ? 'Dashboard' : 'Get Started'}
           </Link>
+          <Link to="/gallery" className={buttonVariants({ size: 'sm' })}>
+            Gallery
+          </Link>
         </div>
       </div>
 
