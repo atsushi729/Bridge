@@ -3,12 +3,10 @@ import { Link, useLoaderData } from '@remix-run/react'
 import { json } from '@remix-run/node'
 import { authenticator } from '#app/modules/auth/auth.server'
 import { cn } from '#app/utils/misc'
-import { useTheme } from '#app/utils/hooks/use-theme.js'
 import { siteConfig } from '#app/utils/constants/brand'
 import { ROUTE_PATH as LOGIN_PATH } from '#app/routes/auth+/login'
 import { Button, buttonVariants } from '#app/components/ui/button'
 import { ThemeSwitcherHome } from '#app/components/misc/theme-switcher'
-import ShadowPNG from '#public/images/shadow.png'
 import Navigation from '#app/components/ui/navigation'
 import Background from '#app/components/ui/background'
 
@@ -23,7 +21,6 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
 export default function Index() {
   const { user } = useLoaderData<typeof loader>()
-  const theme = useTheme()
 
   return (
     <div className="relative flex h-full w-full flex-col bg-card">

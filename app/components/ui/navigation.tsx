@@ -1,7 +1,7 @@
 import { Logo } from '#app/components/logo'
 import { buttonVariants } from '#app/components/ui/button'
 import { cn } from '#app/utils/misc'
-import { Link, useLoaderData } from '@remix-run/react'
+import { Link } from '@remix-run/react'
 import { Star } from 'lucide-react'
 import { ROUTE_PATH as LOGIN_PATH } from '#app/routes/auth+/login'
 
@@ -9,20 +9,20 @@ type Jsonify<T> = T extends Date
   ? string
   : T extends object
     ? { [K in keyof T]: Jsonify<T[K]> }
-    : T;
+    : T
 
 type User = Jsonify<{
-  id: string;
-  email: string;
-  username: string | null;
-  customerId: string | null;
-  createdAt: Date | null;
-  updatedAt: Date | null;
-}> | null;
+  id: string
+  email: string
+  username: string | null
+  customerId: string | null
+  createdAt: Date | null
+  updatedAt: Date | null
+}> | null
 
 const Navigation = ({ user }: { user?: User }) => {
   return (
-    <div className="relative flex h-full w-full flex-col bg-card">
+    <div>
       {/* Navigation */}
       <div className="sticky top-0 z-50 mx-auto flex w-full max-w-screen-lg items-center justify-between p-6 py-3">
         <Link to="/" prefetch="intent" className="flex h-10 items-center gap-1">
