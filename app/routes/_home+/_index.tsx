@@ -10,6 +10,7 @@ import { Button, buttonVariants } from '#app/components/ui/button'
 import { ThemeSwitcherHome } from '#app/components/misc/theme-switcher'
 import ShadowPNG from '#public/images/shadow.png'
 import Navigation from '#app/components/ui/navigation'
+import Background from '#app/components/ui/background'
 
 export const meta: MetaFunction = () => {
   return [{ title: `${siteConfig.siteTitle} - Starter Kit` }]
@@ -432,13 +433,7 @@ export default function Index() {
       </footer>
 
       {/* Background */}
-      <img
-        src={ShadowPNG}
-        alt="Hero"
-        className={`fixed left-0 top-0 z-0 h-full w-full opacity-60 ${theme === 'dark' ? 'invert' : ''}`}
-      />
-      <div className="base-grid fixed h-screen w-screen opacity-40" />
-      <div className="fixed bottom-0 h-screen w-screen bg-gradient-to-t from-[hsl(var(--card))] to-transparent" />
+      <Background />
     </div>
   )
 }
