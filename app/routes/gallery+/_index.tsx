@@ -3,7 +3,6 @@ import Footer from '#app/components/ui/footer'
 import HeroWithImage from '#app/components/ui/hero'
 import Navigation from '#app/components/ui/navigation'
 import Showcase from '#app/components/ui/showcase'
-import { LoaderFunction, json } from '@remix-run/router'
 
 const item = {
   headline: '日本で働きたい優秀なエンジニアのポートフォリオを確認できます',
@@ -29,7 +28,6 @@ const portfolio: ShowcaseItem[] = [
   { id: 5, name: 'Item Two', description: 'This is the second item.' },
   { id: 6, name: 'Item Three', description: 'This is the third item.' },
 ]
-
 //   return json(portfolio)
 // }
 
