@@ -4,6 +4,14 @@ import HeroWithImage from '#app/components/ui/hero'
 import Navigation from '#app/components/ui/navigation'
 import Showcase from '#app/components/ui/showcase'
 
+// Types
+type ShowcaseItem = {
+  id: number
+  name: string
+  description: string
+}
+
+// Value (Response)
 const item = {
   headline: '日本で働きたい優秀なエンジニアのポートフォリオを確認できます',
   subheadline: '明確なテックスタックを確認することで適切な即戦力人材を確保',
@@ -13,20 +21,14 @@ const item = {
   },
 }
 
-type ShowcaseItem = {
-  id: number
-  name: string
-  description: string
-}
-
 // export const loader: LoaderFunction = async () => {
 const portfolio: ShowcaseItem[] = [
   { id: 1, name: 'Item One', description: 'This is the first item.' },
   { id: 2, name: 'Item Two', description: 'This is the second item.' },
   { id: 3, name: 'Item Three', description: 'This is the third item.' },
-  { id: 4, name: 'Item One', description: 'This is the first item.' },
-  { id: 5, name: 'Item Two', description: 'This is the second item.' },
-  { id: 6, name: 'Item Three', description: 'This is the third item.' },
+  { id: 4, name: 'Item Four', description: 'This is the first item.' },
+  { id: 5, name: 'Item Five', description: 'This is the second item.' },
+  { id: 6, name: 'Item Six', description: 'This is the third item.' },
 ]
 //   return json(portfolio)
 // }
