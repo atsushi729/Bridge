@@ -1,7 +1,6 @@
-// app/components/Showcase.tsx
-
 import React from 'react'
 
+// Types
 type ShowcaseItem = {
   id: number
   name: string
@@ -12,7 +11,7 @@ type ShowcaseProps = {
   portfolio: ShowcaseItem[]
 }
 
-const Showcase: React.FC<ShowcaseProps> = ({ portfolio }) => {
+const Showcase = ({ portfolio }: ShowcaseProps) => {
   return (
     <div className="mx-auto max-w-6xl p-4">
       <h1 className="mb-8 text-center text-4xl font-bold">ポートフォリオ</h1>
