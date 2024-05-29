@@ -1,4 +1,4 @@
-import React from 'react'
+import { useNavigate } from '@remix-run/react'
 
 // Types
 type ShowcaseItem = {
@@ -12,13 +12,20 @@ type ShowcaseProps = {
 }
 
 const Showcase = ({ portfolio }: ShowcaseProps) => {
+  const navigate = useNavigate()
+
+  const handleCardClick = (id: number) => {
+    navigate(`/portfolio/${id}`)
+  }
+
   return (
-    <div className="mx-auto max-w-6xl p-4">
+    <div className="z-10 mx-auto max-w-6xl p-4">
       <h1 className="mb-8 text-center text-4xl font-bold">ポートフォリオ</h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {portfolio.map((item) => (
           <div
             key={item.id}
+            onClick={() => handleCardClick(item.id)}
             className="min-w-[250px] transform overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:scale-105">
             <div className="p-6">
               <h2 className="mb-2 text-2xl font-semibold">{item.name}</h2>
