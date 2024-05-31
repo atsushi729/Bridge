@@ -30,7 +30,7 @@ const Showcase = ({ portfolio }: ShowcaseProps) => {
           <div
             key={item.id}
             onClick={() => handleCardClick(item.id)}
-            className="min-w-[250px] transform cursor-pointer overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:scale-105 dark:bg-gray-800">
+            className="min-w-[250px] transform cursor-pointer overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:scale-105 dark:bg-black">
             <img
               src={item.imageUrl}
               alt={item.name}
