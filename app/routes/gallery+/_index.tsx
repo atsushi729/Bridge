@@ -9,6 +9,10 @@ type ShowcaseItem = {
   id: number
   name: string
   description: string
+  imageUrl: string
+  authorName: string
+  authorImage: string
+  date: string
 }
 
 // Value (Response)
@@ -23,13 +27,65 @@ const item = {
 
 // export const loader: LoaderFunction = async () => {
 const portfolio: ShowcaseItem[] = [
-  { id: 1, name: 'Item One', description: 'This is the first item.' },
-  { id: 2, name: 'Item Two', description: 'This is the second item.' },
-  { id: 3, name: 'Item Three', description: 'This is the third item.' },
-  { id: 4, name: 'Item Four', description: 'This is the first item.' },
-  { id: 5, name: 'Item Five', description: 'This is the second item.' },
-  { id: 6, name: 'Item Six', description: 'This is the third item.' },
+  {
+    id: 1,
+    name: 'Train ChatGPT on your Documentation',
+    description:
+      'In this tutorial, we will build a system that indexes your website and lets you query it.',
+    imageUrl: '/images/motivation.jpeg',
+    authorName: 'Eric Allam',
+    authorImage: '/images/motivation.jpeg',
+    date: 'November 28, 2023',
+  },
+  {
+    id: 2,
+    name: 'Top 4 ways to send notifications about new GitHub stars',
+    description:
+      'Learn how to get notified about new GitHub stars every day using email, SMS, Slack and Discord.',
+    imageUrl: '/images/motivation.jpeg',
+    authorName: 'Eric Allam',
+    authorImage: '/images/motivation.jpeg',
+    date: 'November 21, 2023',
+  },
+  {
+    id: 3,
+    name: 'Take NextJS to the next level: Create a GitHub stars monitor',
+    description:
+      'Learn how to create a GitHub stars monitor to check your stars over months and how many stars you get daily.',
+    imageUrl: '/images/motivation.jpeg',
+    authorName: 'Eric Allam',
+    authorImage: '/images/motivation.jpeg',
+    date: 'November 14, 2023',
+  },
+  {
+    id: 4,
+    name: 'Item Four',
+    description: 'This is the fourth item.',
+    imageUrl: '/images/motivation.jpeg',
+    authorName: 'Author Four',
+    authorImage: '/images/motivation.jpeg',
+    date: 'November 7, 2023',
+  },
+  {
+    id: 5,
+    name: 'Item Five',
+    description: 'This is the fifth item.',
+    imageUrl: '/images/motivation.jpeg',
+    authorName: 'Author Five',
+    authorImage: '/images/motivation.jpeg',
+    date: 'October 31, 2023',
+  },
+  {
+    id: 6,
+    name: 'Item Six',
+    description: 'This is the sixth item.',
+    imageUrl: '/images/motivation.jpeg',
+    authorName: 'Author Six',
+    authorImage: '/images/motivation.jpeg',
+    date: 'October 24, 2023',
+  },
 ]
+
 //   return json(portfolio)
 // }
 
