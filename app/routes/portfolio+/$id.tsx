@@ -51,12 +51,18 @@ const PortfolioDetail = () => {
               authorName={item.authorName}
               position={item.position}
             />
+            {/* Main contents */}
             <img className="mb-8 h-auto w-full" src={item.imageUrl} alt={item.name} />
+            <h2 className="mb-2 font-bold">アプリケーションについて</h2>
             <p className="mb-8 text-justify">{item.bodyText}</p>
-            <div className="grid grid-cols-2 gap-4">
+
+            <h2 className="mb-2 font-bold">テックスタック</h2>
+            <p className="mb-8 text-justify">{item.bodyText}</p>
+            {/* <div className="grid grid-cols-2 gap-4">
               <img className="h-auto w-full" src={item.imageUrl} alt="extra image 1" />
               <img className="h-auto w-full" src={item.imageUrl} alt="extra image 2" />
-            </div>
+            </div> */}
+            <h2 className="mb-2 font-bold">技術コメント</h2>
             <p className="mt-8 text-justify">{item.bodyText}</p>
           </div>
         </div>
