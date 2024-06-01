@@ -16,13 +16,14 @@ interface ShowcaseItem {
 const portfolio: ShowcaseItem[] = [
   {
     id: 1,
-    name: 'Trigger.dev v3: Durable Serverless functions. No timeouts.',
-    description: 'This is the description of Project One.',
+    name: 'アルゴリズムドキュメント（React + P5.js + Manim）',
+    description:
+      'データ構造や探索・ソートアルゴリズムの概要や計算量をまとめたサイトをReactベースで作成しました。',
     imageUrl: '/images/motivation.jpeg',
     bodyText:
       'Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look.',
-    authorName: 'John Doe',
-    position: 'Project Manager',
+    authorName: 'Atsushi Hatakeyama',
+    position: 'Full stack developer',
   },
 ]
 
