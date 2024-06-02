@@ -23,9 +23,11 @@ const portfolio: ShowcaseItem[] = [
       'データ構造や探索・ソートアルゴリズムの概要や計算量をまとめたサイトをReactベースで作成しました。',
     imageUrl: '/images/motivation.jpeg',
     applicationDescription:
-      'Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look.',
-    techstackDescription: 'Tech stack',
-    techDescription: 'Tech stack',
+      'このアプリケーションは、データ構造や探索・ソートアルゴリズムの概念を可視化し、学習者がより直感的に理解できるように設計されています。Reactを用いてフロントエンドを構築し、P5.jsとManimを使用してアルゴリズムのアニメーションを実現しています。',
+    techstackDescription:
+      'このアプリケーションの技術スタックには、Reactをメインのフレームワークとして使用し、P5.jsで描画を行い、Manimでアニメーションを作成しています。また、バックエンドにはNode.jsとExpressを使用し、データベースにはMongoDBを採用しています。',
+    techDescription:
+      'このプロジェクトで直面した技術的な課題には、複雑なアルゴリズムのアニメーションの同期、リアルタイムでのユーザー入力処理、パフォーマンスの最適化などがありました。これらの課題を克服するために、非同期処理やWeb Workerを活用し、効率的な描画アルゴリズムを設計しました。',
     authorName: 'Atsushi Hatakeyama',
     position: 'Full stack developer',
   },
@@ -63,7 +65,7 @@ const PortfolioDetail = () => {
             <h2 className="mb-2 font-bold">テックスタック</h2>
             <p className="mb-8 text-justify">{item.techstackDescription}</p>
             <h2 className="mb-2 font-bold">技術コメント</h2>
-            <p className="mt-8 text-justify">{item.techDescription}</p>
+            <p className="mb-8 text-justify">{item.techDescription}</p>
           </div>
         </div>
       </div>
