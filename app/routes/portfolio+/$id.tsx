@@ -8,7 +8,9 @@ interface ShowcaseItem {
   name: string
   description: string
   imageUrl: string
-  bodyText: string
+  applicationDescription: string
+  techstackDescription: string
+  techDescription: string
   authorName: string
   position: string
 }
@@ -20,8 +22,10 @@ const portfolio: ShowcaseItem[] = [
     description:
       'データ構造や探索・ソートアルゴリズムの概要や計算量をまとめたサイトをReactベースで作成しました。',
     imageUrl: '/images/motivation.jpeg',
-    bodyText:
+    applicationDescription:
       'Body text for your whole article or post. We’ll put in some lorem ipsum to show how a filled-out page might look.',
+    techstackDescription: 'Tech stack',
+    techDescription: 'Tech stack',
     authorName: 'Atsushi Hatakeyama',
     position: 'Full stack developer',
   },
@@ -55,16 +59,15 @@ const PortfolioDetail = () => {
             {/* Main contents */}
             <img className="mb-8 h-auto w-full" src={item.imageUrl} alt={item.name} />
             <h2 className="mb-2 font-bold">アプリケーションについて</h2>
-            <p className="mb-8 text-justify">{item.bodyText}</p>
-
+            <p className="mb-8 text-justify">{item.applicationDescription}</p>
             <h2 className="mb-2 font-bold">テックスタック</h2>
-            <p className="mb-8 text-justify">{item.bodyText}</p>
+            <p className="mb-8 text-justify">{item.techstackDescription}</p>
             {/* <div className="grid grid-cols-2 gap-4">
               <img className="h-auto w-full" src={item.imageUrl} alt="extra image 1" />
               <img className="h-auto w-full" src={item.imageUrl} alt="extra image 2" />
             </div> */}
             <h2 className="mb-2 font-bold">技術コメント</h2>
-            <p className="mt-8 text-justify">{item.bodyText}</p>
+            <p className="mt-8 text-justify">{item.techDescription}</p>
           </div>
         </div>
       </div>
