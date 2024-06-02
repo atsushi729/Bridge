@@ -62,10 +62,6 @@ const PortfolioDetail = () => {
             <p className="mb-8 text-justify">{item.applicationDescription}</p>
             <h2 className="mb-2 font-bold">テックスタック</h2>
             <p className="mb-8 text-justify">{item.techstackDescription}</p>
-            {/* <div className="grid grid-cols-2 gap-4">
-              <img className="h-auto w-full" src={item.imageUrl} alt="extra image 1" />
-              <img className="h-auto w-full" src={item.imageUrl} alt="extra image 2" />
-            </div> */}
             <h2 className="mb-2 font-bold">技術コメント</h2>
             <p className="mt-8 text-justify">{item.techDescription}</p>
           </div>
