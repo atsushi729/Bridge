@@ -1,5 +1,5 @@
-app = "my-remix-app"
-primary_region = "lax"
+app = "bridge-jp"
+primary_region = "nrt"
 build = { }
 
 [[mounts]]
