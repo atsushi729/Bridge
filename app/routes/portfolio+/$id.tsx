@@ -12,6 +12,7 @@ interface ShowcaseItem {
   techstackDescription: string
   techDescription: string
   authorName: string
+  link: string
   position: string
 }
 
@@ -29,6 +30,7 @@ const portfolio: ShowcaseItem[] = [
     techDescription:
       'このプロジェクトで直面した技術的な課題には、複雑なアルゴリズムのアニメーションの同期、リアルタイムでのユーザー入力処理、パフォーマンスの最適化などがありました。これらの課題を克服するために、非同期処理やWeb Workerを活用し、効率的な描画アルゴリズムを設計しました。',
     authorName: 'Atsushi Hatakeyama',
+    link: 'https://algorithm-visualizer-bqz.pages.dev/',
     position: 'Full stack developer',
   },
 ]
@@ -66,6 +68,16 @@ const PortfolioDetail = () => {
             <p className="mb-8 text-justify">{item.techstackDescription}</p>
             <h2 className="mb-2 font-bold">技術コメント</h2>
             <p className="mb-8 text-justify">{item.techDescription}</p>
+            <h2 className="mb-2 font-bold">リンク</h2>
+            <p className="mb-8 text-justify">
+              <a
+                href={item.link}
+                className="text-blue-500 underline"
+                target="_blank"
+                rel="noopener noreferrer">
+                {item.link}
+              </a>
+            </p>
           </div>
         </div>
       </div>
