@@ -7,7 +7,8 @@ interface ShowcaseItem {
   id: number
   name: string
   description: string
-  imageUrl: string
+  authorImgUrl: string
+  portfolioImgUr?: string
   applicationDescription: string
   techstackDescription: string
   techDescription: string
@@ -22,7 +23,8 @@ const portfolio: ShowcaseItem[] = [
     name: 'アルゴリズムドキュメント（React + P5.js + Manim）',
     description:
       'データ構造や探索・ソートアルゴリズムの概要や計算量をまとめたサイトをReactベースで作成しました。',
-    imageUrl: '/images/motivation.jpeg',
+    authorImgUrl: '/images/motivation.jpeg',
+    portfolioImgUr: '/images/algorithm.png',
     applicationDescription:
       'このアプリケーションは、データ構造や探索・ソートアルゴリズムの概念を可視化し、学習者がより直感的に理解できるように設計されています。Reactを用いてフロントエンドを構築し、P5.jsとManimを使用してアルゴリズムのアニメーションを実現しています。',
     techstackDescription:
@@ -56,12 +58,16 @@ const PortfolioDetail = () => {
             <p className="mb-4 text-gray-600">{item.description}</p>
             {/* Author */}
             <Author
-              imageUrl={item.imageUrl}
+              imageUrl={item.authorImgUrl}
               authorName={item.authorName}
               position={item.position}
             />
             {/* Main contents */}
-            <img className="mb-8 h-auto w-full" src={item.imageUrl} alt={item.name} />
+            <img
+              className="mb-8 h-auto w-full"
+              src={item.portfolioImgUr}
+              alt={item.name}
+            />
             <h2 className="mb-2 font-bold">アプリケーションについて</h2>
             <p className="mb-8 text-justify">{item.applicationDescription}</p>
             <h2 className="mb-2 font-bold">テックスタック</h2>
