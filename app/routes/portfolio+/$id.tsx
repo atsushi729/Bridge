@@ -1,7 +1,7 @@
 import Author from '#app/components/ui/author'
 import Footer from '#app/components/ui/footer'
 import Navigation from '#app/components/ui/navigation'
-import { useParams } from '@remix-run/react'
+import { useNavigate, useParams } from '@remix-run/react'
 
 interface ShowcaseItem {
   id: number
@@ -46,6 +46,12 @@ const PortfolioDetail = () => {
     return <div>Item not found</div>
   }
 
+  const navigate = useNavigate()
+
+  const handleAuthorClick = (id: number) => {
+    navigate(`/author/${id}`)
+  }
+
   return (
     <>
       {/* Navigation */}
@@ -57,11 +63,14 @@ const PortfolioDetail = () => {
             <h1 className="mb-2 text-4xl font-bold">{item.name}</h1>
             <p className="mb-4 text-gray-600">{item.description}</p>
             {/* Author */}
-            <Author
-              imageUrl={item.authorImgUrl}
-              authorName={item.authorName}
-              position={item.position}
-            />
+
+            <div className="cursor-pointer" onClick={() => handleAuthorClick(item.id)}>
+              <Author
+                imageUrl={item.authorImgUrl}
+                authorName={item.authorName}
+                position={item.position}
+              />
+            </div>
             {/* Main contents */}
             <img
               className="mb-8 h-auto w-full"
