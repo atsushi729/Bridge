@@ -1,7 +1,13 @@
-import React from 'react'
+import Footer from '#app/components/ui/footer'
+import Navigation from '#app/components/ui/navigation'
 
 const Author = () => {
-  return <div>Author</div>
+  return (
+    <>
+      <Navigation />
+      <Footer />
+    </>
+  )
 }
 
 export default Author
