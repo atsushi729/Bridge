@@ -29,11 +29,11 @@ const item = {
 const portfolio: ShowcaseItem[] = [
   {
     id: 1,
-    name: 'Train ChatGPT on your Documentation',
+    name: 'アルゴリズムドキュメント（React + P5.js + Manim）',
     description:
-      'In this tutorial, we will build a system that indexes your website and lets you query it.',
-    imageUrl: '/images/motivation.jpeg',
-    authorName: 'Eric Allam',
+      'データ構造や探索・ソートアルゴリズムの概要や計算量をまとめたサイトをReactベースで作成しました。',
+    imageUrl: '/images/algorithm.png',
+    authorName: 'Atsushi Hatakeyama',
     authorImage: '/images/motivation.jpeg',
     date: 'November 28, 2023',
   },
