@@ -40,14 +40,13 @@ const portfolio: ShowcaseItem[] = [
 
 const PortfolioDetail = () => {
   const { id } = useParams<{ id: string }>()
+  const navigate = useNavigate()
 
   const item = portfolio.find((item) => item.id === Number(id))
 
   if (!item) {
     return <div>Item not found</div>
   }
-
-  const navigate = useNavigate()
 
   const handleAuthorClick = (id: number) => {
     navigate(`/author/${id}`)
@@ -64,7 +63,6 @@ const PortfolioDetail = () => {
             <h1 className="mb-2 text-4xl font-bold">{item.name}</h1>
             <p className="mb-4">{item.description}</p>
             {/* Author */}
-
             <div className="cursor-pointer" onClick={() => handleAuthorClick(item.id)}>
               <Author
                 imageUrl={item.authorImgUrl}
