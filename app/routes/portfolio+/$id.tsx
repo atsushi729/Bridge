@@ -1,4 +1,5 @@
 import Author from '#app/components/ui/author'
+import Background from '#app/components/ui/background'
 import Footer from '#app/components/ui/footer'
 import Navigation from '#app/components/ui/navigation'
 import { useNavigate, useParams } from '@remix-run/react'
@@ -53,15 +54,15 @@ const PortfolioDetail = () => {
   }
 
   return (
-    <>
+    <div className="flex h-full flex-col">
       {/* Navigation */}
       <Navigation />
-      <div className="flex min-h-screen flex-col items-center bg-white text-black dark:bg-black dark:text-white">
+      <div className="z-10 flex min-h-screen flex-col items-center text-black dark:text-white">
         <div className="w-full max-w-4xl p-4">
           <div className="mb-8">
             {/* Title */}
             <h1 className="mb-2 text-4xl font-bold">{item.name}</h1>
-            <p className="mb-4 text-gray-600">{item.description}</p>
+            <p className="mb-4">{item.description}</p>
             {/* Author */}
 
             <div className="cursor-pointer" onClick={() => handleAuthorClick(item.id)}>
@@ -98,7 +99,9 @@ const PortfolioDetail = () => {
       </div>
       {/* Footer */}
       <Footer />
-    </>
+      {/* Background */}
+      <Background />
+    </div>
   )
 }
 
