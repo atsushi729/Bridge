@@ -24,17 +24,17 @@ const Footer = () => {
         <p className="flex items-center whitespace-nowrap text-center text-sm font-medium text-primary/60">
           Built by&nbsp;
           <a
-            href="https://twitter.com/DanielKanem"
+            href="https://x.com/Hatakey2Atsushi"
             target="_blank"
             rel="noreferrer"
             className="flex items-center text-primary hover:text-primary hover:underline">
-            DanielKanem
+            Atsushi Hatakeyama
           </a>
         </p>
         <p className="flex items-center whitespace-nowrap text-center text-sm font-medium text-primary/60">
           Source code available on&nbsp;{' '}
           <a
-            href="https://github.com/dev-xo/remix-saas"
+            href="https://github.com/atsushi729"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-primary hover:text-primary hover:underline">
