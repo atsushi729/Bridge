@@ -1,12 +1,13 @@
+import Background from '#app/components/ui/background'
 import Footer from '#app/components/ui/footer'
 import Navigation from '#app/components/ui/navigation'
 
 const Author = () => {
   return (
-    <>
+    <div className="flex h-full flex-col">
+      {/* Navigation */}
       <Navigation />
-
-      <div className="mx-auto mt-5 flex max-w-6xl flex-col overflow-hidden rounded-lg border border-gray-300 font-sans dark:bg-black md:flex-row">
+      <div className="z-10 mx-auto mt-5 flex max-w-6xl flex-col overflow-hidden rounded-lg border border-gray-300 font-sans md:flex-row">
         <div className="flex items-center justify-center p-4 md:w-1/3">
           <img
             src="/images/motivation.jpeg"
@@ -52,8 +53,11 @@ const Author = () => {
           </div>
         </div>
       </div>
+      {/* Footer */}
       <Footer />
-    </>
+      {/* Background */}
+      <Background />
+    </div>
   )
 }
 
