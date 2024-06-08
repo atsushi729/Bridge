@@ -1,5 +1,6 @@
 import Author from '#app/components/ui/author'
 import Background from '#app/components/ui/background'
+import { Button } from '#app/components/ui/button'
 import Footer from '#app/components/ui/footer'
 import Navigation from '#app/components/ui/navigation'
 import { useNavigate, useParams } from '@remix-run/react'
@@ -95,6 +96,9 @@ const PortfolioDetail = () => {
           </div>
         </div>
       </div>
+      <Button size="sm" className="z-10" onClick={() => handleAuthorClick(item.id)}>
+        作者ページへ
+      </Button>
       {/* Footer */}
       <Footer />
       {/* Background */}
