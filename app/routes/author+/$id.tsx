@@ -30,6 +30,8 @@ const Author = () => {
               <strong>所在地:</strong>
               <br /> ベトナム：ハノイ
             </p>
+            <h4 className="mt-14 text-lg font-bold">スキルマッチ</h4>
+            <hr></hr>
             <p className="mt-4">
               <strong>ノウハウ</strong>
               <br />
@@ -43,12 +45,36 @@ const Author = () => {
             <p className="mt-4">
               <strong>プログラミング言語</strong>
               <br />
-              ニミキュ、パッシュ、C/C++エンベデッド、錆、ジャワ
+              Python、Bash、C/C++、Java
             </p>
             <p className="mt-4">
               <strong>対象</strong>
               <br />
               ブログ記事、動画コンテンツ、前で話す、製品説明会、コンファレンス（ブースデモ）、ミートアップ、ソーシャルメディア
+            </p>
+            <h4 className="mt-14 text-lg font-bold">カルチャーマッチ</h4>
+            <hr></hr>
+            <p className="mt-4">
+              <strong>開発する上で大切にしていること</strong>
+              <br />
+              私はコードの品質を非常に重視しています。クリーンでメンテナンスしやすいコードを書くことは、プロジェクトの成功に不可欠だと考えています。
+            </p>
+            <p className="mt-4">
+              <strong>チーム内での立ち振る舞いについて</strong>
+              <br />
+              私は常に協力的であり、他のメンバーが問題に直面したときにはサポートを提供します。
+            </p>
+            <h4 className="mt-14 text-lg font-bold">キャリアマッチ</h4>
+            <hr></hr>
+            <p className="mt-4">
+              <strong>将来の計画</strong>
+              <br />
+              将来的にはチームリーダーやプロジェクトマネージャーとして、プロジェクト全体をリードしたいと考えています。
+            </p>
+            <p className="mt-4">
+              <strong>期待するポジション</strong>
+              <br />
+              バックエンド開発を専門とするソフトウェアエンジニアのポジションを希望しています。
             </p>
           </div>
         </div>
