@@ -3,7 +3,7 @@
  * Add your brand details here.
  */
 export const siteConfig = {
-  siteTitle: 'Remix SaaS',
+  siteTitle: 'Bridge',
   siteDescription:
     'A Lightweight, Production-Ready Remix Stack for your next SaaS Application.',
   siteUrl: 'https://remix-saas.fly.dev',
