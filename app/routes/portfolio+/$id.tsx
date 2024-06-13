@@ -28,7 +28,7 @@ const portfolio: ShowcaseItem[] = [
     authorImgUrl: '/images/motivation.jpeg',
     portfolioImgUr: '/images/algorithm.png',
     applicationDescription:
-      'このアプリケーションは、データ構造や探索・ソートアルゴリズムの概念を可視化し、学習者���より直感的に理解できるように設計されています。Reactを用いてフロントエンドを構築し、P5.jsとManimを使用してアルゴリズムのアニメーションを実現しています。',
+      'このアプリケーションは、データ構造や探索・ソートアルゴリズムの概念を可視化し、学習者がより直感的に理解できるように設計されています。Reactを用いてフロントエンドを構築し、P5.jsとManimを使用してアルゴリズムのアニメーションを実現しています。',
     techstackDescription:
       'このアプリケーションの技術スタックには、Reactをメインのフレームワークとして使用し、P5.jsで描画を行い、Manimでアニメーションを作成しています。また、バックエンドにはNode.jsとExpressを使用し、データベースにはMongoDBを採用しています。',
     techDescription:
