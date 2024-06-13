@@ -1,8 +1,13 @@
 import Background from '#app/components/ui/background'
+import { Button } from '#app/components/ui/button'
 import Footer from '#app/components/ui/footer'
 import Navigation from '#app/components/ui/navigation'
 
 const Author = () => {
+  const handleClick = () => {
+    alert('OK')
+  }
+
   return (
     <div className="flex h-full flex-col">
       {/* Navigation */}
@@ -79,6 +84,12 @@ const Author = () => {
           </div>
         </div>
       </div>
+      <Button
+        size="sm"
+        className="z-10 mx-auto my-10 w-24 "
+        onClick={() => handleClick()}>
+        採用する
+      </Button>
       {/* Footer */}
       <Footer />
       {/* Background */}
