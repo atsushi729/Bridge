@@ -5,7 +5,7 @@ import Footer from '#app/components/ui/footer'
 import Navigation from '#app/components/ui/navigation'
 import { useNavigate, useParams } from '@remix-run/react'
 
-interface ShowcaseItem {
+interface Portfolio {
   id: number
   name: string
   description: string
@@ -19,7 +19,7 @@ interface ShowcaseItem {
   position: string
 }
 
-const portfolio: ShowcaseItem[] = [
+const portfolio: Portfolio[] = [
   {
     id: 1,
     name: 'アルゴリズムドキュメント（React + P5.js + Manim）',
