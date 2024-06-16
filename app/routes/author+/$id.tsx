@@ -2,8 +2,16 @@ import Background from '#app/components/ui/background'
 import { Button } from '#app/components/ui/button'
 import Footer from '#app/components/ui/footer'
 import Navigation from '#app/components/ui/navigation'
+import { users } from '#app/constants/user'
+import { useParams } from '@remix-run/react'
 
 const Author = () => {
+  const { id } = useParams<{ id: string }>()
+  const item = users.find((item) => item.id === Number(id))
+
+  //---------------------------------------------
+  //                 Event handler
+  //---------------------------------------------
   const handleClick = () => {
     alert('OK')
   }
