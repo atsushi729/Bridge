@@ -23,8 +23,8 @@ const Author = () => {
       <div className="z-10 mx-auto mt-5 flex max-w-6xl flex-col overflow-hidden rounded-lg border border-gray-300 font-sans md:flex-row">
         <div className="flex items-center justify-center p-4 md:w-1/3">
           <img
-            src="/images/motivation.jpeg"
-            alt="Darragh Grealish"
+            src={item?.image ? item.image : '/images/default-avatar.png'}
+            alt={item?.name}
             className="h-auto w-full rounded-lg"
           />
         </div>
