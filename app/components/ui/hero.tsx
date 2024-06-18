@@ -65,7 +65,7 @@ export default function HeroWithImage({ item }: { item: HeroBlockDto }) {
               )
             })} */}
           </div>
-          <div className="mt-8 space-y-3">
+          {/* <div className="mt-8 space-y-3">
             {item.bottomText && (
               <span>
                 {t(item.bottomText.text ?? '')}{' '}
@@ -89,7 +89,7 @@ export default function HeroWithImage({ item }: { item: HeroBlockDto }) {
                 )}
               </span>
             )}
-          </div>
+          </div> */}
         </div>
         <div className="dark:border-border-300 w-5/6 rounded-lg border-2 border-dashed border-gray-800 md:w-1/2 lg:w-full lg:max-w-lg">
           <img
