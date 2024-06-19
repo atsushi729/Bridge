@@ -35,7 +35,7 @@ const portfolio: ShowcaseItem[] = [
       'データ構造や探索・ソートアルゴリズムの概要や計算量をまとめたサイトをReactベースで作成しました。',
     imageUrl: '/images/algorithm.png',
     authorName: 'Atsushi Hatakeyama',
-    authorImage: '/images/motivation.jpeg',
+    authorImage: '/images/avatar.png',
     date: 'November 28, 2023',
   },
   {
@@ -62,7 +62,7 @@ const portfolio: ShowcaseItem[] = [
     id: 4,
     name: 'Item Four',
     description: 'This is the fourth item.',
-    imageUrl: '/images/motivation.jpeg',
+    imageUrl: '/images/avatar.png',
     authorName: 'Author Four',
     authorImage: '/images/motivation.jpeg',
     date: 'November 7, 2023',

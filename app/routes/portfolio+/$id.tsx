@@ -25,7 +25,7 @@ const portfolio: Portfolio[] = [
     name: 'アルゴリズムドキュメント（React + P5.js + Manim）',
     description:
       'データ構造や探索・ソートアルゴリズムの概要や計算量をまとめたサイトをReactベースで作成しました。',
-    authorImgUrl: '/images/motivation.jpeg',
+    authorImgUrl: '/images/avatar.png',
     portfolioImgUr: '/images/algorithm.png',
     applicationDescription:
       'このアプリケーションは、データ構造や探索・ソートアルゴリズムの概念を可視化し、学習者がより直感的に理解できるように設計されています。Reactを用いてフロントエンドを構築し、P5.jsとManimを使用してアルゴリズムのアニメーションを実現しています。',
