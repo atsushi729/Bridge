@@ -7,6 +7,7 @@ export const users = [
     company: 'Tata consultancy services',
     aboutAuthor: 'スイスを拠点に、さまざまな国際的なクライアントと実践的なコンサルティングの両方を行うDarraghは、56Kの共同設立者です。クラウドは、ネットワークおよび通信テクノロジーの開発およびツールとクラウドネイティブの実現に焦点を当てたスタートアップ企業であり、SwisscomとAkamaiの元従業員であるDarraghは、25年以上にわたって産業および研究の経験を持ち、ネットワークエッジとパブリッククラウドのインターフェイス間の組み込みのシステムとテレコムで学びました。5Gとエッジクラウドの両方でAWSと提携している企業CTOを務めている彼は、通信事業者のCSPとISVにクラウドネイティブの考え方を採用することが重要であると感じています。AWS Community BuildersとARM InnovatorsプログラムのメンバーであるDarragh氏と彼のチームは、さまざまな業種の開発者と協力して、ツールと開発者との関係、およびクラウドネイティブの考え方での5G技術の促進を実現しています。',
     born: 'ベトナム：ハノイ',
+    image: '/images/avatar.png',
     knowledge: '開発者の生産性、ソフトウェア・セキュア・サプライチェーン、Kubernetes',
     techstack: 'AI、ブロックチェーン、Web3',
     language: 'Python、Bash、C/C++、Java',
