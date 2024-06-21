@@ -5,9 +5,9 @@ type ShowcaseItem = {
   id: number
   name: string
   description: string
-  imageUrl: string
+  portfolioImgUrl: string
   authorName: string
-  authorImage: string
+  authorImgUrl: string
   date: string
 }
 
@@ -32,7 +32,7 @@ const Showcase = ({ portfolio }: ShowcaseProps) => {
             onClick={() => handleCardClick(item.id)}
             className="min-w-[250px] transform cursor-pointer overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:scale-105 dark:bg-black">
             <img
-              src={item.imageUrl}
+              src={item.portfolioImgUrl}
               alt={item.name}
               className="h-48 w-full object-cover"
             />
@@ -43,7 +43,7 @@ const Showcase = ({ portfolio }: ShowcaseProps) => {
               <p className="text-gray-600 dark:text-gray-300">{item.description}</p>
               <div className="mt-4 flex items-center">
                 <img
-                  src={item.authorImage}
+                  src={item.authorImgUrl}
                   alt={item.authorName}
                   className="h-10 w-10 rounded-full"
                 />
