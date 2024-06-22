@@ -5,19 +5,8 @@ import Navigation from '#app/components/ui/navigation'
 import Showcase from '#app/components/ui/showcase'
 import { portfolio } from '#app/constants/portfolio'
 
-// Types
-type ShowcaseItem = {
-  id: number
-  name: string
-  description: string
-  portfolioImgUrl: string
-  authorName: string
-  authorImage: string
-  date: string
-}
-
-// Value (Response)
-const item = {
+// Hero contents
+const heroContents = {
   headline: '日本で働きたい優秀なエンジニアのポートフォリオを確認できます',
   subheadline: '明確なテックスタックを確認することで適切な即戦力人材を確保',
   image: '/images/hero.jpeg',
@@ -33,7 +22,7 @@ const Index = () => {
       {/* Navigation */}
       <Navigation />
       {/* Hero */}
-      <HeroWithImage item={item} />
+      <HeroWithImage heroContents={heroContents} />
       {/* Showcase */}
       <Showcase portfolio={portfolio} />
       {/* Footer */}
