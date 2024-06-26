@@ -24,8 +24,8 @@ model User {
   roles        Role[]
   portfolios   Portfolio[]
 
-  company   Company   @relation(fields: [companyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   companyId Int
+  company   Company   @relation(fields: [companyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
 
   createdAt    DateTime? @default(now())
   updatedAt    DateTime @updatedAt
