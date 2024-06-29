@@ -3,7 +3,7 @@ import { ThemeSwitcherHome } from '../misc/theme-switcher'
 const Footer = () => {
   return (
     <footer className="z-10 flex w-full flex-col items-center justify-center gap-8 py-6">
-      <a
+      {/* <a
         href="https://twitter.com/DanielKanem"
         target="_blank"
         rel="noreferrer"
@@ -16,7 +16,7 @@ const Footer = () => {
             fill="currentColor"
           />
         </svg>
-      </a>
+      </a> */}
 
       <ThemeSwitcherHome />
 
