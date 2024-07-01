@@ -44,22 +44,24 @@ const PortfolioDetail = () => {
               src={item.portfolioImgUrl}
               alt={item.name}
             />
-            <h2 className="mb-2 font-bold">アプリケーションについて</h2>
-            <p className="mb-8 text-justify">{item.applicationDescription}</p>
-            <h2 className="mb-2 font-bold">テックスタック</h2>
-            <p className="mb-8 text-justify">{item.techstackDescription}</p>
-            <h2 className="mb-2 font-bold">技術コメント</h2>
-            <p className="mb-8 text-justify">{item.techDescription}</p>
-            <h2 className="mb-2 font-bold">リンク</h2>
-            <p className="mb-8 text-justify">
-              <a
-                href={item.link}
-                className="text-blue-500 underline"
-                target="_blank"
-                rel="noopener noreferrer">
-                {item.link}
-              </a>
-            </p>
+            <div className="text-base">
+              <h2 className="mb-2 font-bold">アプリケーションについて</h2>
+              <p className="mb-10 text-justify">{item.applicationDescription}</p>
+              <h2 className="mb-2 font-bold">テックスタック</h2>
+              <p className="mb-10 text-justify">{item.techstackDescription}</p>
+              <h2 className="mb-2 font-bold">技術コメント</h2>
+              <p className="mb-10 text-justify">{item.techDescription}</p>
+              <h2 className="mb-2 font-bold">リンク</h2>
+              <p className="mb-10 text-justify">
+                <a
+                  href={item.link}
+                  className="text-blue-500 underline"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  {item.link}
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
