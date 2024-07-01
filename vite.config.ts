@@ -3,6 +3,9 @@ import { defineConfig } from 'vite'
 import { flatRoutes } from 'remix-flat-routes'
 import { remixDevTools } from 'remix-development-tools'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import mdx from '@mdx-js/rollup'
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 export default defineConfig({
   build: {
@@ -10,6 +13,9 @@ export default defineConfig({
   },
   plugins: [
     remixDevTools(),
+    mdx({
+      remarkPlugins: [remarkFrontmatter, [remarkMdxFrontmatter, { name: 'attributes' }]],
+    }),
     remix({
       serverModuleFormat: 'esm',
       ignoredRouteFiles: ['**/.*'],
